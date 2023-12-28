@@ -1,6 +1,6 @@
 # gnome-sm (gnome shortcut maker)
 
-### *gnome-sm is a command-line tool to create .desktop files for adding shortcuts to the `gdm`.
+### gnome-sm is a command-line tool to create .desktop files for adding shortcuts to the `gdm`.
 
 ## Prerequesties
 
