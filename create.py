@@ -1,3 +1,6 @@
+# create.py | main program
+# author: mairebaap
+
 import os
 
 shortcut = '''
