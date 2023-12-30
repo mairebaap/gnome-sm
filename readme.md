@@ -21,7 +21,7 @@
 
 ---
  After creating the `progress.txt` file, on the terminal write this:
-```
+```bash
 python3 rename.py --fn shortcuts/progress.txt -ren myDesktopShortcut --ext .desktop
 ```
 * ### `--fn` means filename
