@@ -55,7 +55,7 @@ def stageFour():
         case '1':
             print("Saved and ready to go.")
             with open('shortcuts/progress.txt', 'a') as progress:
-                chose = "Catagories=" + str('Accessories')
+                chose = "Categories=" + str('Accessories')
                 progress.write(chose)
             opn = open('shortcuts/progress.txt', 'r')
             print(opn)
