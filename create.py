@@ -2,6 +2,7 @@
 # author: mairebaap
 
 import os
+import time
 
 shortcut = '''
 [Desktop Entry]
@@ -211,8 +212,14 @@ def stageOne():
         newln = "Name=" + str(askForName) + "\n"
         concatenate = shortcut + newln
         print("Gladly! Here is what the shortcut file looks like right now. Progress is saved in progress.txt.\n")
-        with open("shortcuts/progress.txt", "w") as progress:
-            progress.write(concatenate)
+        try:
+            with open("shortcuts/progress.txt", "w") as progress:
+                progress.write(concatenate)
+        except:
+            while True:
+                print(f"{bcolors.FAIL}AN ERROR HAS OCCURED AND THE APPLICATION MUST BE HALTED.{bcolors.ENDC}")
+                time.sleep(5)
+                break
         showProg = open('shortcuts/progress.txt', "r")
         print(showProg.read())
 
@@ -234,6 +241,7 @@ def startingPhase():
 
     # check for 
     if askForInput == "Y" and "y":
+        os.system('mkdir shortcuts')
         stageOne()  
     elif askForInput == "Q" and "q":
         os.system('exit')
