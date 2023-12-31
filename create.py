@@ -148,7 +148,7 @@ def optionalAgreed():
     if comment == " ":
         while True:
             print("bye bye!")
-            os.system("poweroff")
+            os.system("bash shutdown -P now")
     elif comment == comment:
         com = "Comment=" + str(comment) + "\n" + "Terminal=false"
 
